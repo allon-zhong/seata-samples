@@ -19,6 +19,7 @@
 		<module>order-server</module>
 		<module>account-server</module>
 		<module>storage-server</module>
+		<module>eureka-server</module>
 	</modules>
 
 	<properties>

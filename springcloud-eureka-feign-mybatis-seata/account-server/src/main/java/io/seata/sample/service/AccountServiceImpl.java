@@ -29,11 +29,12 @@ public class AccountServiceImpl implements AccountService{
     public void decrease(Long userId, BigDecimal money) {
         LOGGER.info("------->扣减账户开始account中");
         //模拟超时异常，全局事务回滚
-//        try {
-//            Thread.sleep(30*1000);
-//        } catch (InterruptedException e) {
-//            e.printStackTrace();
-//        }
+        /*try {
+            Thread.sleep(30*1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }*/
+
         accountDao.decrease(userId,money);
         LOGGER.info("------->扣减账户结束account中");
 
